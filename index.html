@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="style.css" rel="stylesheet"/>
+    <title>Dice Wars</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+  <h1>Dice Wars</h1>
+  <p>Roll Your Dice to Defeat Your Opponent!</p> 
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-xs-4">
+				<img class="img-responsive" src="resources/images/skeleton.png">
+                <div class="well" id="enemyd4"></div>
+				<img class="img-responsive mart10" src="resources/images/archer.png">
+                <div class="well" id="playerd4"></div>
+				<button type="button" class="btn btn-primary mart10" id="rollbtnd4" onclick="roll('4')">Roll</button>
+            </div>
+            <div class="col-sm-2 col-xs-4">
+				<img class="img-responsive" src="resources/images/orc.png">
+                <div class="well" id="enemyd6"></div>
+				<img class="img-responsive mart10" src="resources/images/spearman.png">
+                <div class="well" id="playerd6"></div>
+				<button type="button" class="btn btn-primary mart10" id="rollbtnd6" onclick="roll('6')">Roll</button>
+            </div>
+            <div class="col-sm-2 col-xs-4">
+				<img class="img-responsive" src="resources/images/werewolf.png">
+                <div class="well" id="enemyd8"></div>
+				<img class="img-responsive mart10" src="resources/images/warrior.png">
+                <div class="well" id="playerd8"></div>
+				<button type="button" class="btn btn-primary mart10" id="rollbtnd8" onclick="roll('8')">Roll</button>
+            </div>
+            <div class="col-sm-2 col-xs-4">
+				<img class="img-responsive" src="resources/images/vampire.png">
+                <div class="well" id="enemyd10"></div>
+				<img class="img-responsive mart10" src="resources/images/knight.png">
+                <div class="well" id="playerd10"></div>
+				<button type="button" class="btn btn-primary mart10" id="rollbtnd10" onclick="roll('10')">Roll</button>
+            </div>
+            <div class="col-sm-2 col-xs-4">
+				<img class="img-responsive" src="resources/images/voodoo.png">
+                <div class="well" id="enemyd12"></div>
+				<img class="img-responsive mart10" src="resources/images/wizard.png">
+                <div class="well" id="playerd12"></div>
+				<button type="button" class="btn btn-primary mart10" id="rollbtnd12" onclick="roll('12')">Roll</button>
+            </div>
+            <div class="col-sm-2 col-xs-4">
+				<img class="img-responsive" src="resources/images/demon.png">
+                <div class="well" id="enemyd20"></div>
+				<img class="img-responsive mart10" src="resources/images/dragon.png">
+                <div class="well" id="playerd20"></div>
+				<button type="button" class="btn btn-primary mart10" id="rollbtnd20" onclick="roll('20')">Roll</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="alert alert-success" id="victoryend">
+            <strong>Victory!</strong>
+            </div>
+            <div class="alert alert-danger" id="defeatend">
+            <strong>Defeat!</strong>
+            </div>
+        </div>
+      </div>
+    <div class="container">
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Step 1: Roll the Dice</h3>
+          <p>When you roll your dice, the strength of your army is determined for that unit.</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Step 2: Enemy Rolls</h3>
+          <p>As you roll your dice,  your opponent will roll their dice in response.</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Step 3: Scoring</h3> 
+          <p>The result of your dice rolls are then pitted against the opposing army's  rolls.</p>
+          </div>
+        </div>
+      </div>
+
+	  <a href="/" class="btn btn-default">Reset</a>
+	  
+      <div class="citations">
+         <p>Icons from the Noun Project by Gan Khoon Lay, BirVa Mehta, and Cristiano Zoucas.</p> 
+      </div>
+	
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+			  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</script>
+	
+	  <script src="js/bootstrap.min.js"></script>
+	  
+	<script src="script.js"></script>
+    
+  </body>
+</html>
